@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talha - Speed Typer Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="https://lwfiles.mycourse.app/66607bc908bed6ee79e2ab54-public/a1fac85c5dc7bcffdfd5469855511e3c.png">
+  </head>
+  <body>
+    <button id="settings-btn" class="settings-btn" >
+      <i class="fas fa-cog"></i>Settings
+    </button>
+    <div class="settings" id="settings">
+      <form id="settings-form">
+        <label for="difficulty">Difficulty</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </form>
+    </div>
+    <div class="container">
+      <h2>👩‍💻 Speed Typer 👨‍💻</h2>
+      <small>Type the following:</small>
+      <h1 id="word"></h1>
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="Type the word here..."
+      />
+      <p class="time-container">Time left: <span id="time">10s</span></p>
+      <p class="score-container">Score: <span id="score">0</span></p>
+      <div id="end" class="end"></div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.7.1.js'></script>
+    <script src="script.js"></script>
+  </body>
+</html>
